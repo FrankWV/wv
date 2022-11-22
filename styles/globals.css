@@ -1,0 +1,294 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+a,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+  background: #060547;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.btn {
+  border: 1px solid #ffffff;
+  border-radius: 88px;
+  background: #fff;
+  padding: 16px 32px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  transition: all 0.3s ease;
+  color: #0a55ff;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: #fff;
+}
+
+.btn.secondary:hover {
+  background: #fff;
+  color: #0a55ff;
+}
+
+.btn-transparent {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #fff;
+  padding: 18px 32px;
+  border-radius: 88px;
+  transition: all 0.3s ease;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-transparent:hover {
+  gap: 10px;
+}
+
+.my-masonry-grid {
+  display: flex;
+  width: auto;
+  gap: 48px;
+}
+
+.my-masonry-grid_column {
+  background-clip: padding-box;
+}
+
+.slick-slider .slick-dots {
+  bottom: -100px;
+}
+.slick-slider .slick-dots li {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  margin: 0 10px;
+}
+.slick-slider .slick-dots li button {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0;
+  background: #d1d0d6;
+  border-radius: 50%;
+}
+.slick-slider .slick-dots li.slick-active button {
+  background: radial-gradient(#0a55ff 0, #d13fba 100%);
+  backdrop-filter: blur(40px);
+}
+.slick-slider .slick-dots li button:before {
+  display: none;
+}
+
+.accordion__item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.accordion__item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.accordion__button {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.accordion__button:after {
+  content: "";
+  width: 16px;
+  height: 8px;
+  right: 0;
+  top: 5px;
+  position: absolute;
+  background: url(../assets/images/dropdown.svg) no-repeat;
+  transform: rotateX(180deg);
+  transition: all 0.3s ease;
+}
+.accordion__button[aria-expanded="true"]:after {
+  transform: rotateX(0);
+}
+
+.accordion__panel {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #fff;
+  opacity: 70%;
+  margin-top: 20px;
+}
+
+@media (max-width: 1023px) {
+  .my-masonry-grid {
+    gap: 24px;
+  }
+  .btn-transparent {
+    padding: 13px 25px;
+    font-size: 18px;
+  }
+  .accordion__item {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .accordion__button {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .accordion__panel {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn {
+    padding: 9px 18px;
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .btn-transparent {
+    padding: 9px 18px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 641px) {
+  .btn-transparent {
+    padding: 8px 15px;
+    font-size: 15px;
+  }
+  .slick-slider .slick-dots {
+    bottom: -50px;
+  }
+  .accordion__button {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .accordion__panel {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
